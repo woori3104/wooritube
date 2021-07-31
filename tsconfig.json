@@ -1,0 +1,14 @@
+
+{
+    "compilerOptions": {
+      "outDir": "./built",
+      "allowJs": true,
+      "target": "ES5"
+    },
+    "include": ["./src/**/*"],
+    "noImplicitAny": true, // if infered type is any, error
+    "strictNullChecks": true, // remove auto included null, undefined => compile and run time types would be equal
+    "noImplicitReturns": true, // all code scopes should return value
+    "strictFunctionTypes": true, // if type of parameter is equal or not supertype, error
+    "strictPropertyInitialization": true // if property has no initializer, error
+  }
