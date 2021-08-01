@@ -22,3 +22,9 @@
 - 모든 handler는 middleware이고 모든 controller는 handler이다. 
 - middleware는 3개의 arguments를 포함한다. (req, res, next)
 - next argument는 ``` next()``` 로 현재 핸들러가 종료된 후 다음 핸들러 함수를 요청한다. 
+
+    ## Morgan
+    - ``` npm i morgan ```
+    - HTTP request logger middleware for node.js
+    - http 요청에 대한 정보를 console log로 남겨주는 logger기능의 middleware
+    
