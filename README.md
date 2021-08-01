@@ -28,3 +28,28 @@
     - HTTP request logger middleware for node.js
     - http 요청에 대한 정보를 console log로 남겨주는 logger기능의 middleware
     
+## Router 
+- Controller와 Url의 관리를 쉽게해줌 
+    - 미니 어플리케이션을 만들게 해줌 
+
+    ## Wooritube Reload
+    / -> Home
+    /join -> Join
+    /login -> Login
+    /search -> Search
+
+    ### Before
+    /edit-profile -> edit user
+    /delete-user -> Delete user
+    ### User Router After
+    /users/edit
+    /users/delete
+
+    ### Before
+    /watch-video -> Watch Video
+    /edit-video -> Edit Video
+    /delete-video-> Delete Video
+    ### Video Router After
+    /videos/watch
+    /videos/edit
+    /videos/delete

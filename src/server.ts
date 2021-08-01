@@ -1,24 +1,21 @@
 import * as express from "express";
+import e = require("express");
 import * as morgan from "morgan";
+import globalRouter from "./routers/globalRouter";
+import userRouter from "./routers/userRouter";
+import videoRouter from "./routers/videoROuter";
 
 const PORT = 4000;
 
 const app = express();
 const logger = morgan("dev");
 
-const home = (req:express.Request, res:express.Response) => {
-  return res.send("welcome to the private lounge.");
-};
-
-const login = (req:express.Request, res:express.Response) => {
-  return res.send("login");
-};
+app.use("/videos", videoRouter);
+app.use("/users", userRouter);
+app.use("/", globalRouter);
 
 // 모든 router에서 사용하는 use
 app.use(logger);
-// gossipMiddleware next가 있기때문에 종료후 handleHome을 호출
-app.get("/", home);
-app.get("/protected", login);
 
 const handleLogin = (req:express.Request, res:express.Response) => {
   return res.send("Login");
