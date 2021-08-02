@@ -58,7 +58,7 @@
     /videos/:id/edit -> Edit Video
     /videos/:id/delete -> Delete Video
     /videos/upload -> Upload Video
-    
+
 ## Controller 
 - Controller is Function 
 - 미들웨어의 일종이지만 메인 로직을 담당하므로 분리해서 관리 
@@ -72,3 +72,10 @@
  - Model -> Controller (요청 완료)
  - Model -> View (View Engine)에 데이터 반환 
  - View -> User 뷰페이지 리턴 
+
+## What is PUG
+- Pub는 template engine
+- html을 간단히 사용하기 위해 사용
+- express 에서 view engine으로 사용하기 위해서 
+    - ``` npm i pub ```
+    - ``` app.set("view engine", "pug")```
