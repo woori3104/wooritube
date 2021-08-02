@@ -3,7 +3,7 @@ import e = require("express");
 import * as morgan from "morgan";
 import globalRouter from "./routers/globalRouter";
 import userRouter from "./routers/userRouter";
-import videoRouter from "./routers/videoROuter";
+import videoRouter from "./routers/videoRouter";
 
 const PORT = 4000;
 
