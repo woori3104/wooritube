@@ -62,6 +62,11 @@ export const getEdit = (req:express.Request, res:express.Response) => {
   const video = videos[id - 1];
   return res.render("edit", { pageTitle: `Editing: ${video.title}`, video });
 };
-export const postEdit = (req:express.Request, res:express.Response)  => {};
+export const postEdit = (req:express.Request, res:express.Response)  => {
+  const id:number = Number(req.params.id);
+  const { title } = req.body;
+  videos[id - 1].title = title;
+  return res.redirect(`/videos/${id}`);
+};
 export const upload = (req:express.Request, res:express.Response)  => {};
 export const deleteVideo = (req:express.Request, res:express.Response)  => {};

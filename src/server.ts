@@ -9,6 +9,7 @@ import videoRouter from "./routers/videoRouter";
 const PORT = 4000;
 const app = express();
 const logger = morgan("dev");
+app.use(express.urlencoded({ extended: true }));
 
 // Header에서 Express를 표시 안하려면 disable해줌
 app.disable('x-powered-by');
