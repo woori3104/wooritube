@@ -77,5 +77,5 @@
 - Pub는 template engine
 - html을 간단히 사용하기 위해 사용
 - express 에서 view engine으로 사용하기 위해서 
-    - ``` npm i pub ```
-    - ``` app.set("view engine", "pug")```
+  - ``` npm i pub ```
+  - ``` app.set("view engine", "pug")```
