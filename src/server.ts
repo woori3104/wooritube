@@ -1,3 +1,5 @@
+
+import "./db";
 import * as express from "express";
 import e = require("express");
 import * as morgan from "morgan";

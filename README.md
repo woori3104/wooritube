@@ -79,3 +79,21 @@
 - express 에서 view engine으로 사용하기 위해서 
   - ``` npm i pub ```
   - ``` app.set("view engine", "pug")```
+
+
+## DataBase - MongoDB
+- Document-based 
+    - 일반적인 DB는 SQL-based
+    - As a Programmer , you Think in objects
+        - json Like Documents
+- 초보자가 접근하기 쉬운 DB
+- 설치 
+    ``` brew tap mongodb/brew ```
+    ``` brew install mongodb-community@5.0 ```
+- Mongoose 
+    - node.js 와 mongoDB를 이어주는 다리 역할(상호작용)
+    - ``` mongod ```
+    - ``` mongod --config /opt/homebrew/etc/mongod.conf --fork ``` // mongoDB shell을 쓰기위해 m1 에서 설정해줘야하는것 
+    - ``` mongo ```
+    - ``` npm i mongoose ```
+
