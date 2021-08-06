@@ -21,4 +21,7 @@ const videoSchema = new mongoose.Schema ({
         rating: Number,
     },
 });
-module.exports = mongoose.model<IVideo>('Videos', videoSchema);
+
+const Video = mongoose.model<IVideo>('Videos', videoSchema);
+
+export default Video;

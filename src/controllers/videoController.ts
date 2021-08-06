@@ -1,8 +1,6 @@
 
 import * as express from "express"; 
-import { IVideo } from "../models/video";
-
-let Video = require('./Videos.model');
+import Video from "../models/Video";
 
 export const home = (req:express.Request, res:express.Response) => {
   console.log("Start");
