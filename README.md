@@ -102,3 +102,21 @@
 - Read
 - Update
 - Delete
+
+## Promise
+- JavaScript안에 내장되어있는 Object
+- JavaScrip 엔진은 싱글 스레드 방식으로 동기적 작업을 수행한다. 
+    - 비동기적으로 작업을 수행하게 하기 위해 콜백함수, 프로미스, async-await 를 사용한다.
+- 콜백 함수 보다 더 유용하게 사용가능. 
+- 프로미스가 만들어지는 순간 executor가 자동수행
+    - then : 프로미스가 정상적으로 수행되었을때 
+    - catch : 에러가 발생했을때 처리
+    - finally : then, catch상관없이 마지막에 호출
+
+## async - await
+- async function선언은 asyncfunction객체를 반환하는 하나의 비동기 함수를 정의 
+- 비동기 함수는 이벤트 루프를 통해 비동기적으로 작동 
+    - 암시적으로 Promise를 사용하여 결과 반환 
+- async키워드는 async 함수에서만 유효 
+- async/await함수의 목적은 사용하는 여러 promise의 동작을 동기스럽게 사용할 수 있게 하고, 어떠한 동작을 여러 promise의 그룹에서 간단하게 동작하게 하는 것이다.
+- promise가 구조화된 callback과 유사한 것 처럼 async/await또한 제네레이터(generator)와 프로미스(promise)를 묶는것과 유사하다.
