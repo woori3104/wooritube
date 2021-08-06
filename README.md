@@ -95,5 +95,10 @@
     - ``` mongod ```
     - ``` mongod --config /opt/homebrew/etc/mongod.conf --fork ``` // mongoDB shell을 쓰기위해 m1 에서 설정해줘야하는것 
     - ``` mongo ```
-    - ``` npm i mongoose ```
+- ``` npm i mongoose ```
 
+## CRUD
+- Create
+- Read
+- Update
+- Delete
